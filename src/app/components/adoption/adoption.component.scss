@@ -1,0 +1,396 @@
+
+// .hero-container {
+// 	width: 100%; /* Fixed width */
+// 	min-height: 400px;
+// 		display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background-size: cover;
+// 	background-position: center;
+// 	transition: background-image 1s ease-in-out;
+// 	position: relative;
+//   }
+  
+//   .hero-content {
+// 	position: relative;
+// 	z-index: 1;
+//   }
+  
+//   .hero-container::before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	z-index: 0;
+//   }
+  
+//   .text-white {
+// 	color: #fff;
+//   }
+//   .hero-content h1 {
+// 	font-family: 'Roboto Slab', serif; /* Cursive font for headings */
+// 	font-weight: 700;
+// 	font-size: 2.5rem;
+// 	color: #fdf2f2;
+// 	text-shadow: 2px 2px 8px #000;
+// 	animation: fadeInPulse 2s ease-in-out infinite;
+// 	margin-bottom: 10px; /* Adjust spacing */
+// }
+
+
+  
+//   .hero-content p {
+// 	font-family: 'Raleway', sans-serif;
+// 	font-weight: 300;
+// 	font-size: 2rem; /* Larger font for the main text */
+// 	color: #030404; /* Light color for the paragraph */
+// 	text-shadow: 1px 1px 4px #ed3232; /* Shadow for better readability */
+//   }
+  
+ 
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+
+
+
+/* Importing Raleway for headings and Roboto Slab for a cursive feel */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.playfair-display {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+  }
+  .cantarell-regular {
+	font-family: "Cantarell", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .open-sans- {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+  }
+  .lato-thin {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  }
+  .montserrat{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+  }
+  .crimson-text-regular-italic {
+	font-family: "Crimson Text", serif;
+	font-weight: 400;
+	font-style: italic;
+  }
+  .pt-serif-regular {
+	font-family: "PT Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  
+/* Base styles for hero container */
+.hero-container {
+	width: 100%;
+	min-height: 300px; /* Default minimum height */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	transition: background-image 1s ease-in-out;
+	position: relative;
+}
+
+/* New container for text at the bottom */
+.bottom-text-container {
+	position: absolute;
+	bottom: 5px; /* Adjust this value to change the distance from the bottom */
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+	padding: 30px 20px; /* Increased padding for more height */
+	border-radius: 10px; /* Rounded corners */
+	min-height: 350px; /* Minimum height for the container */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	.hero-container {
+		min-height: 300px; /* Adjust height for smaller screens */
+	}
+}
+
+/* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.hero-container {
+		min-height: 500px; /* Adjust height for medium screens */
+	}
+}
+
+/* Media query for larger screens */
+@media (min-width: 1025px) {
+	.hero-container {
+		min-height: 600px; /* Adjust height for larger screens */
+	}
+}
+
+/* Hero content styling */
+.hero-content {
+	position: relative;
+	z-index: 1;
+}
+
+/* Bottom text container styling */
+.bottom-text-container h1 {
+	font-family: 'Roboto Slab', serif; /* Cursive font for headings */
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: #fdf2f2;
+	text-shadow: 2px 2px 8px #000;
+	animation: fadeInPulse 2s ease-in-out infinite;
+	margin-bottom: 10px; /* Adjust spacing */
+}
+
+.bottom-text-container p {
+	font-family: 'Raleway', sans-serif; /* Raleway for paragraphs */
+	font-weight: 300;
+	font-size: 2rem;
+	color: #030404;
+	text-shadow: 1px 1px 4px #ed3232;
+}
+
+.content{
+	margin-top: 40px;
+}
+@keyframes fadeInPulse {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* layout.component.css */
+.container {
+	max-width: 1200px;
+  }
+  
+  h1 {
+	font-size: 2.5rem;
+	text-align: center;
+  }
+  h3{
+	font-size: 1.5rem;
+	color: #0c0c0c;
+	font-family: 'Nunito', sans-serif;
+
+ }
+  .why-head{
+	color: brown;
+	font-family: "Playfair Display", serif;
+  }
+  
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  .d-flex {
+	display: flex !important;
+  }
+  .reduced-height {
+	height: 550px; /* Adjust the height as needed */
+	object-fit: cover;
+ /* Ensure the image covers the area while maintaining aspect ratio */
+  }
+  .custom-margin-top {
+	margin-top: 6rem; /* Adjust this value as needed */
+  }
+  .why{
+	font-size: 16px;
+	color: rgb(142, 140, 140);
+    font-family: "Josefin Sans", sans-serif;
+
+  }
+  .welcometo{
+	min-height: 100px;
+	margin-top: 4rem;
+  }
+  
+
+  // choosepet
+ /* Ensure the height of the big card matches the combined height of the left cards */
+.left-card{
+	min-height: 150px;
+}
+  .big-card {
+	height: calc(100% + 1rem); /* Increase height to match the two left cards with margin */
+  }
+  .card-title {
+	font-size: 1.5rem; /* Increase the font size for the card title */
+  }
+  
+  .text-primary {
+	color: #007bff; /* Primary color for the text */
+  }
+  
+  .text-secondary {
+	color: #6c757d; /* Secondary color for the text */
+  }
+  
+  .text-center {
+	text-align: center; /* Center align the text */
+  }
+  .card-bg-1 {
+	color: #0e8937; /* White text */
+  }
+  
+  .card-bg-2 {
+	color: #0f0c0c; /* White text */
+  }
+  
+  .card-bg-3 {
+	color: #e42121; /* White text */
+  }
+  
+  /* Optional: Adding box shadow for better visual appearance */
+  .card {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ .choosepetcon{
+	background-color: rgb(12, 38, 32);
+ }
+ /* card-layout.component.css */
+ 
+  .card {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 16px;
+	transition: transform 0.2s, box-shadow 0.2s;
+	background-color: rgb(255, 255, 255);
+	text-decoration: none;
+  }
+  
+  .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	color: #d6336c;
+	text-align: center;
+  }
+  
+  .card-text {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+  }
+  
+  .custom-card-height {
+	min-height: 150px; /* Adjust this value to increase the height */
+  }
+  
+  .rounded-image {
+	display: block;
+	width: 130px; /* Adjust the size as needed */
+	height: 130px; /* Adjust the size as needed */
+	border-radius: 50%;
+	margin: 10px auto 0;
+	background-color: rgb(237, 82, 82); /* Center the image and add some margin */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767px) {
+	.custom-card-height {
+	  min-height: 200px; /* Adjust this value for smaller screens */
+	}
+  }
+  .choosepet {
+    background-color: rgb(20, 48, 20);
+    padding: 30px 0;
+}
+
+/* Center align text inside cards */
+.custom-card-height .card-body {
+    text-align: left;
+}
+
+/* Style for the form container */
+.custom-card-height .card-body form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form inputs */
+.custom-card-height .card-body form .form-group {
+    margin-bottom: 15px;
+}
+
+.custom-card-height .card-body form label {
+    font-weight: bold;
+}
+
+.custom-card-height .card-body form .btn-primary {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-card-height .card-body form .btn-primary {
+        width: auto;
+    }
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  //how it works
+  .heading{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.5rem;
+
+  }
+  .content{
+	font-family: 'Josefin Sans', sans-serif;
+font-size: 1rem;
+  }
+  .fas{
+	color: #791D3F;
+  }
+  .how{
+	font-family: "Playfair Display", serif;
+	color: brown;
+
+  }

@@ -1,0 +1,85 @@
+<div class="content-wrapper">
+    <div class="main-content">
+      <!-- Your main content here -->
+    </div>
+    <div class="footer-wrapper">
+      <footer class="container-fluid full-width-container">
+        <div class="py-2">
+          <!-- Newsletter Section -->
+          <div class="newsletter-section text-center py-4">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-4 text-center text-md-start mb-3 mb-md-0 news">
+                <h3>Get Updates & More</h3>
+                <p style="margin-bottom: 10px;">Thoughtful thoughts to your inbox</p>
+              </div>
+              <div class="col-md-6">
+                <form (ngSubmit)="onSubmit()" class="d-flex flex-nowrap">
+                  <div class="input-group">
+                    <input type="email" class="form-control" style="max-width: 200px;" placeholder="Your Email" [(ngModel)]="email" name="email" required>
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="submit">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Footer Section -->
+          <div class="footer-section py-4">
+            <div class="row">
+              <!-- First Column -->
+              <div class="col-md-4 mb-2">
+                <div class="welcome-container">
+                  <h4 class="welcome">Welcome to Pawfectcare</h4>
+                  <p class="paw">Pawfect Care is dedicated to being your top choice for pet adoption and exceptional pet services. Our team of passionate professionals is here to cater to all your pet care needs with love and expertise.</p>
+                </div>
+                <div class="social-icons mt-3">
+                  <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <h4>Pet Services</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Grooming</a></li>
+                  <li><a href="#">Pet Boarding</a></li>
+                  <li><a href="#">Pet Training</a></li>
+                  <li><a href="#">Vet on call</a></li>
+                  <li><a href="#">Adopt a pet</a></li>
+                  <li><a href="#">Rehome a pet</a></li>
+                </ul>
+              </div>
+              <!-- Third Column -->
+              <div class="col-md-4 mb-2">
+                <h4>Contact Us</h4>
+                <div class="address-section">
+                  <div class="mb-2">
+                    <h5>Our Location</h5>
+                    <p>1/243, West Mambalam, Chennai-632005</p>
+                  </div>
+                  <div class="contact-info mb-2">
+                    <h5>Call Us</h5>
+                    <p>+91 12345 67890</p>
+                  </div>
+                  <div class="mail">
+                    <h5>Mail Us</h5>
+                    <p>info&#64;pawfectcare.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Copyright Section -->
+            <div class="row">
+              <div class="col text-center copy">
+                <p class="mt-4 mb-0">&copy; 2024 Pet Shop. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>

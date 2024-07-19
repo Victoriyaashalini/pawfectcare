@@ -1,0 +1,200 @@
+// /* app.component.css */
+// .main-image {
+// 	position: relative;
+
+// 	width: 70%;
+// 	max-height: 400px;
+// 	object-fit: cover;
+
+//   }
+//   .first{
+// 	background-color: rgb(255, 227, 189);
+//   }
+  
+//   .display-4{
+// 	color: darkred;
+//   }
+//   .floating-item {
+// 	position: absolute;
+// 	width: 50px;
+//   }
+  
+//   @media (max-width: 768px) {
+// 	.floating-item {
+// 	  width: 30px;
+// 	}
+//   }
+  
+//   .dropdown-toggle::after {
+// 	margin-left: .5em;
+//   }
+//   .carousel-custom {
+// 	max-width: 800px; /* Adjust as needed */
+// 	max-height: 600px; /* Adjust as needed */
+// 	margin: auto; /* Center align the carousel */
+//   }
+  
+//   .slide-content {
+// 	padding: 20px; /* Adjust padding as needed */
+//   }
+
+// .pet{
+// 	font-size: 3rem;
+// }
+// .carousel-inner {
+// 	height: 600px; /* Adjust the height as needed */
+//   }
+  
+//   .carousel-item {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+//   }
+  
+//   .carousel-item .container {
+// 	height: 100%;
+//   }
+  
+//   .carousel-item img.main-image {
+// 	max-height: 100%;
+// 	max-width: 100%;
+//   }
+  
+//   @media (max-width: 767px) {
+// 	.carousel-inner {
+// 	  height: auto; /* Let the height adjust based on content */
+// 	}
+  
+// 	.carousel-item {
+// 	  flex-direction: row; /* Ensure items stay in a row */
+// 	  text-align: left; /* Align text to the left */
+// 	}
+  
+// 	.carousel-item img.main-image {
+// 	  max-width: 40%; /* Adjust image size for smaller screens */
+// 	  height: auto;
+// 	}
+  
+// 	.carousel-item .container {
+// 	  padding: 20px;
+// 	}
+  
+// 	.carousel-item .col-md-6 {
+// 	  flex: 0 0 50%;
+// 	  max-width: 50%;
+// 	}
+  
+// 	.carousel-item .lead,
+// 	.carousel-item .display-4 {
+// 	  font-size: 1rem; /* Adjust font size for smaller screens */
+// 	}
+  
+// 	.carousel-item .btn-lg {
+// 	  font-size: 0.875rem; /* Adjust button size for smaller screens */
+// 	}
+//   }
+  
+.carousel-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px; /* Adjust height as needed */
+  }
+  
+  .custom-carousel-item {
+	background-color: #f9f9f9; /* Background color to match design */
+  }
+ 
+  .custom-row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
+  .first{
+	 	background-color: rgb(255, 227, 189);
+	   }
+	  
+  
+  .text-container {
+	max-width: 50%;
+  }
+  
+  .image-container {
+	max-width: 50%;
+  }
+  
+  .custom-text {
+	font-family: 'Arial', sans-serif; /* Use the desired font family */
+  }
+  .pet {
+	margin-bottom: 2rem;
+	white-space: nowrap;
+	margin-top: 2rem;
+	font-size: clamp(1.2rem, 2.5vw, 3rem);
+	color: rgb(156, 15, 15);
+   }
+  .leads{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 17px;
+  }
+  
+   .lead {
+	font-size: clamp(13px, 2.5vw, 1rem);  
+	color: rgb(136, 71, 71);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+  
+  
+  .custom-text .display-4 {
+	font-size: 2.5rem; /* Adjust font size */
+	font-weight: bold;
+  }
+  
+  .custom-image-container img.main-image {
+	max-height: 400px; /* Adjust max height as needed */
+	max-width: 100%;
+  }
+  
+  .custom-btn {
+	font-size: 0.475rem; /* Adjust font size */
+	padding: 0.5rem 1rem; /* Adjust padding */
+	height: auto; /* Remove fixed height */
+  }
+  
+  .btn{
+	color: black;
+  }
+
+  @media (max-width: 767px) {
+	.custom-row {
+	  flex-direction: row; /* Keep items side by side on small screens */
+	}
+	.carousel-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 270px; /* Adjust height as needed */
+	  }
+  
+	.text-container,
+	.image-container {
+	  max-width: 100%; /* Allow full width for both containers */
+	}
+  
+	.custom-text .display-4 {
+	  font-size: 1rem; /* Adjust font size for small screens */
+	}
+  
+	.custom-text 
+	.custom-text .custom-btn {
+	  font-size: 0.475rem; /* Adjust font size for small screens */
+	}
+	.pet {
+		margin-bottom: 1rem;
+		white-space: nowrap;
+		margin-top: 1rem;
+
+	}
+	
+  }
+  

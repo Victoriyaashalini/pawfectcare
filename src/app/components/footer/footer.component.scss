@@ -1,0 +1,235 @@
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.newsletter-section, .footer-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.full-width-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Content Wrapper to push footer to the bottom */
+.content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+}
+
+/* Newsletter Section Styles */
+.newsletter-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section h3 {
+    font-weight: bold;
+}
+
+.newsletter-section .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-section .btn-dark {
+    background-color: #000;
+    border: none;
+}
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: #241b1c;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-family: "PT Serif", serif;
+    font-size: 1.3rem;
+    text-align: center; /* Center align all h4 headings */
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 5px;
+}
+
+.social-icons .fab {
+    color: #ffffff;
+}
+
+.social-icons .fa-facebook-f {
+    color: #3b5998;
+}
+
+.social-icons .fa-twitter {
+    color: #00acee;
+}
+
+.social-icons .fa-instagram {
+    color: #c13584;
+}
+
+.social-icons .fa-linkedin-in {
+    color: #0e76a8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .newsletter-section .form-control {
+        width: 100%;
+    }
+
+    .newsletter-section .btn {
+        min-width: 100%;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+}
+
+.paw {
+    text-align: left;
+    margin-top: 20px; /* Add margin to create space between Welcome and Paw content */
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 0; /* Remove bottom margin for better spacing */
+}
+
+/* Align Welcome and Paw Content */
+.footer-section .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-section .welcome-container .welcome {
+    margin: 0;
+}
+
+.footer-section .welcome-container .paw {
+    margin: 10px;
+}
+
+/* Flexbox for equal spacing in footer columns */
+.footer-section .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section .col-md-4 {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section .row:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.copy {
+    border-top: 2px solid grey;
+}
+
+.copy p {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.welcome,
+.paw,
+h4,
+h5,
+p {
+    margin-left: 0;
+}
+
+.welcome {
+    margin-bottom: 10px;
+}
+
+.paw {
+    margin-top: 0;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.address-section p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.address-section h5 {
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+    color: rgb(81, 192, 230);
+}

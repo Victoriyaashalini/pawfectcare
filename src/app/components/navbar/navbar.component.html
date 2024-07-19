@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-3 navbrimage d-none d-lg-block" href="#">
+            <img src="../../../assets/images/pawfectcare_edited-transformed_edited1.jpg" alt="" style="width: 100px;" class="logo img-fluid">
+          </a>
+          <a class="navbar-brand ms-3 d-block d-lg-none" href="#">
+            PAWFECTCARE
+          </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <img src="../../../assets/images/navbarmen.png" alt="Menu">
+      </button>
+  
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas Navbar</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/adoption">Adoption</a>
+            </li>
+            <li class="nav-item dropdown" (click)="toggleDropdown()">
+                <a class="nav-link dropdown-toggle" routerLink="/package" role="button" [attr.data-bs-toggle]="isDropdownOpen ? '' : 'dropdown'" aria-expanded="isDropdownOpen">
+                  Pet Services <img [src]="isDropdownOpen ? '../../../assets/images/down-arrow (3).png' : '../../../assets/images/down-arrow (1).png'" alt="" class="dropdown-icon">
+                </a>
+                <ul class="dropdown-menu" [class.show]="isDropdownOpen">
+                  <li><a class="dropdown-item" routerLink="/grooming">Grooming</a></li>
+                  <li><a class="dropdown-item" routerLink="/daycare">Pet Daycare</a></li>
+                  <li><a class="dropdown-item" routerLink="/training">Pet Training</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/shopping">Shopping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">Contact us</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-between contact-btn d-grid gap-2">
+            <button class="btn btn-primary signup-button" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
